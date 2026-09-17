@@ -1,0 +1,13 @@
+{
+  "name": "@japanready/example-naive-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A deliberately typical Western implementation, to show what JapanReady reports.",
+  "scripts": {
+    "test": "japanready test --config japanready.config.ts --fail-on never"
+  },
+  "devDependencies": {
+    "@japanready/testkit": "0.1.0"
+  }
+}

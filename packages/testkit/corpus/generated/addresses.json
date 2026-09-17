@@ -1,0 +1,1726 @@
+{
+  "version": "0.1.0",
+  "category": "addresses",
+  "generated": true,
+  "cases": [
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "北海道テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "北海道",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "北海道 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0001",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "青森県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "青森県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "青森県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0002",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "岩手県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "岩手県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "岩手県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0003",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "宮城県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "宮城県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "宮城県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0004",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "秋田県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "秋田県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "秋田県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0005",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "山形県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "山形県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "山形県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0006",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "福島県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "福島県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "福島県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0007",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "茨城県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "茨城県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "茨城県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0008",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "栃木県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "栃木県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "栃木県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0009",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "群馬県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "群馬県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "群馬県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0010",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "埼玉県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "埼玉県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "埼玉県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0011",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "千葉県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "千葉県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "千葉県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0012",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "東京都テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "東京都",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "東京都 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0013",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "神奈川県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "神奈川県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "神奈川県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0014",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "新潟県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "新潟県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "新潟県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0015",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "富山県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "富山県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "富山県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0016",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "石川県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "石川県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "石川県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0017",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "福井県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "福井県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "福井県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0018",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "山梨県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "山梨県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "山梨県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0019",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "長野県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "長野県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "長野県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0020",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "岐阜県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "岐阜県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "岐阜県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0021",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "静岡県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "静岡県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "静岡県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0022",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "愛知県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "愛知県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "愛知県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0023",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "三重県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "三重県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "三重県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0024",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "滋賀県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "滋賀県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "滋賀県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0025",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "京都府テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "京都府",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "京都府 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0026",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "大阪府テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "大阪府",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "大阪府 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0027",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "兵庫県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "兵庫県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "兵庫県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0028",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "奈良県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "奈良県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "奈良県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0029",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "和歌山県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "和歌山県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "和歌山県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0030",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "鳥取県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "鳥取県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "鳥取県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0031",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "島根県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "島根県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "島根県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0032",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "岡山県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "岡山県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "岡山県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0033",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "広島県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "広島県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "広島県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0034",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "山口県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "山口県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "山口県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0035",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "徳島県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "徳島県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "徳島県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0036",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "香川県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "香川県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "香川県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0037",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "愛媛県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "愛媛県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "愛媛県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0038",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "高知県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "高知県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "高知県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0039",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "福岡県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "福岡県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "福岡県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0040",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "佐賀県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "佐賀県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "佐賀県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0041",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "長崎県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "長崎県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "長崎県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0042",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "熊本県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "熊本県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "熊本県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0043",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "大分県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "大分県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "大分県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0044",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "宮崎県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "宮崎県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "宮崎県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0045",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "鹿児島県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "鹿児島県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "鹿児島県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0046",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "prefecture-parse",
+      "op": "parseAddress",
+      "input": "沖縄県テスト市テスト町1-2-3",
+      "expectedOutput": {
+        "prefecture": "沖縄県",
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "沖縄県 must be recognised as a prefecture.",
+      "fix": "Match the longest prefecture name at the start of the string. Note 北海道 has no removable suffix — stripping the last character gives 北海.",
+      "id": "addresses.prefecture-parse.0047",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "0010010",
+      "expectedOutput": "001-0010",
+      "severity": "high",
+      "reason": "Postal code 001-0010 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0001",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "001-0010",
+      "expectedOutput": "001-0010",
+      "severity": "high",
+      "reason": "Postal code 001-0010 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0002",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒001-0010",
+      "expectedOutput": "001-0010",
+      "severity": "high",
+      "reason": "Postal code 001-0010 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0003",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "0600001",
+      "expectedOutput": "060-0001",
+      "severity": "high",
+      "reason": "Postal code 060-0001 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0004",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "060-0001",
+      "expectedOutput": "060-0001",
+      "severity": "high",
+      "reason": "Postal code 060-0001 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0005",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒060-0001",
+      "expectedOutput": "060-0001",
+      "severity": "high",
+      "reason": "Postal code 060-0001 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0006",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "1000001",
+      "expectedOutput": "100-0001",
+      "severity": "low",
+      "reason": "Postal code 100-0001 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0007",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "100-0001",
+      "expectedOutput": "100-0001",
+      "severity": "low",
+      "reason": "Postal code 100-0001 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0008",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒100-0001",
+      "expectedOutput": "100-0001",
+      "severity": "low",
+      "reason": "Postal code 100-0001 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0009",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "1500002",
+      "expectedOutput": "150-0002",
+      "severity": "low",
+      "reason": "Postal code 150-0002 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0010",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "150-0002",
+      "expectedOutput": "150-0002",
+      "severity": "low",
+      "reason": "Postal code 150-0002 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0011",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒150-0002",
+      "expectedOutput": "150-0002",
+      "severity": "low",
+      "reason": "Postal code 150-0002 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0012",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "2200005",
+      "expectedOutput": "220-0005",
+      "severity": "low",
+      "reason": "Postal code 220-0005 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0013",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "220-0005",
+      "expectedOutput": "220-0005",
+      "severity": "low",
+      "reason": "Postal code 220-0005 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0014",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒220-0005",
+      "expectedOutput": "220-0005",
+      "severity": "low",
+      "reason": "Postal code 220-0005 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0015",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "2310023",
+      "expectedOutput": "231-0023",
+      "severity": "low",
+      "reason": "Postal code 231-0023 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0016",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "231-0023",
+      "expectedOutput": "231-0023",
+      "severity": "low",
+      "reason": "Postal code 231-0023 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0017",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒231-0023",
+      "expectedOutput": "231-0023",
+      "severity": "low",
+      "reason": "Postal code 231-0023 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0018",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "3300854",
+      "expectedOutput": "330-0854",
+      "severity": "low",
+      "reason": "Postal code 330-0854 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0019",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "330-0854",
+      "expectedOutput": "330-0854",
+      "severity": "low",
+      "reason": "Postal code 330-0854 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0020",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒330-0854",
+      "expectedOutput": "330-0854",
+      "severity": "low",
+      "reason": "Postal code 330-0854 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0021",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "4600002",
+      "expectedOutput": "460-0002",
+      "severity": "low",
+      "reason": "Postal code 460-0002 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0022",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "460-0002",
+      "expectedOutput": "460-0002",
+      "severity": "low",
+      "reason": "Postal code 460-0002 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0023",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒460-0002",
+      "expectedOutput": "460-0002",
+      "severity": "low",
+      "reason": "Postal code 460-0002 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0024",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "5300001",
+      "expectedOutput": "530-0001",
+      "severity": "low",
+      "reason": "Postal code 530-0001 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0025",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "530-0001",
+      "expectedOutput": "530-0001",
+      "severity": "low",
+      "reason": "Postal code 530-0001 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0026",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒530-0001",
+      "expectedOutput": "530-0001",
+      "severity": "low",
+      "reason": "Postal code 530-0001 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0027",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "6008216",
+      "expectedOutput": "600-8216",
+      "severity": "low",
+      "reason": "Postal code 600-8216 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0028",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "600-8216",
+      "expectedOutput": "600-8216",
+      "severity": "low",
+      "reason": "Postal code 600-8216 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0029",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒600-8216",
+      "expectedOutput": "600-8216",
+      "severity": "low",
+      "reason": "Postal code 600-8216 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0030",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "7300011",
+      "expectedOutput": "730-0011",
+      "severity": "low",
+      "reason": "Postal code 730-0011 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0031",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "730-0011",
+      "expectedOutput": "730-0011",
+      "severity": "low",
+      "reason": "Postal code 730-0011 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0032",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒730-0011",
+      "expectedOutput": "730-0011",
+      "severity": "low",
+      "reason": "Postal code 730-0011 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0033",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "8100001",
+      "expectedOutput": "810-0001",
+      "severity": "low",
+      "reason": "Postal code 810-0001 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0034",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "810-0001",
+      "expectedOutput": "810-0001",
+      "severity": "low",
+      "reason": "Postal code 810-0001 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0035",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒810-0001",
+      "expectedOutput": "810-0001",
+      "severity": "low",
+      "reason": "Postal code 810-0001 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0036",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "9000015",
+      "expectedOutput": "900-0015",
+      "severity": "low",
+      "reason": "Postal code 900-0015 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0037",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "900-0015",
+      "expectedOutput": "900-0015",
+      "severity": "low",
+      "reason": "Postal code 900-0015 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0038",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒900-0015",
+      "expectedOutput": "900-0015",
+      "severity": "low",
+      "reason": "Postal code 900-0015 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0039",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "9800021",
+      "expectedOutput": "980-0021",
+      "severity": "low",
+      "reason": "Postal code 980-0021 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0040",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "980-0021",
+      "expectedOutput": "980-0021",
+      "severity": "low",
+      "reason": "Postal code 980-0021 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0041",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒980-0021",
+      "expectedOutput": "980-0021",
+      "severity": "low",
+      "reason": "Postal code 980-0021 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0042",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "9070003",
+      "expectedOutput": "907-0003",
+      "severity": "low",
+      "reason": "Postal code 907-0003 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0043",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "907-0003",
+      "expectedOutput": "907-0003",
+      "severity": "low",
+      "reason": "Postal code 907-0003 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0044",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒907-0003",
+      "expectedOutput": "907-0003",
+      "severity": "low",
+      "reason": "Postal code 907-0003 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0045",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "0790177",
+      "expectedOutput": "079-0177",
+      "severity": "high",
+      "reason": "Postal code 079-0177 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0046",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "079-0177",
+      "expectedOutput": "079-0177",
+      "severity": "high",
+      "reason": "Postal code 079-0177 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0047",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒079-0177",
+      "expectedOutput": "079-0177",
+      "severity": "high",
+      "reason": "Postal code 079-0177 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0048",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "4980000",
+      "expectedOutput": "498-0000",
+      "severity": "low",
+      "reason": "Postal code 498-0000 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0049",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "498-0000",
+      "expectedOutput": "498-0000",
+      "severity": "low",
+      "reason": "Postal code 498-0000 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0050",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒498-0000",
+      "expectedOutput": "498-0000",
+      "severity": "low",
+      "reason": "Postal code 498-0000 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0051",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "8900053",
+      "expectedOutput": "890-0053",
+      "severity": "low",
+      "reason": "Postal code 890-0053 written unseparated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0052",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "890-0053",
+      "expectedOutput": "890-0053",
+      "severity": "low",
+      "reason": "Postal code 890-0053 written hyphenated.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0053",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "postal-forms",
+      "op": "normalizePostalCode",
+      "input": "〒890-0053",
+      "expectedOutput": "890-0053",
+      "severity": "low",
+      "reason": "Postal code 890-0053 written with the 〒 mark.",
+      "fix": "All written forms must normalize to the same canonical value.",
+      "id": "addresses.postal-forms.0054",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-separators",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷2-21-1",
+      "expectedOutput": {
+        "chome": 2,
+        "ban": 21,
+        "go": 1
+      },
+      "severity": "high",
+      "reason": "Block numbers separated by U+2D.",
+      "fix": "Treat every dash-like code point, plus の and ・, as a block separator between digits.",
+      "id": "addresses.block-separators.0001",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "block-separators",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷2ー21ー1",
+      "expectedOutput": {
+        "chome": 2,
+        "ban": 21,
+        "go": 1
+      },
+      "severity": "high",
+      "reason": "Block numbers separated by U+30FC.",
+      "fix": "Treat every dash-like code point, plus の and ・, as a block separator between digits.",
+      "id": "addresses.block-separators.0002",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "block-separators",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷2－21－1",
+      "expectedOutput": {
+        "chome": 2,
+        "ban": 21,
+        "go": 1
+      },
+      "severity": "high",
+      "reason": "Block numbers separated by U+FF0D.",
+      "fix": "Treat every dash-like code point, plus の and ・, as a block separator between digits.",
+      "id": "addresses.block-separators.0003",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "block-separators",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷2−21−1",
+      "expectedOutput": {
+        "chome": 2,
+        "ban": 21,
+        "go": 1
+      },
+      "severity": "high",
+      "reason": "Block numbers separated by U+2212.",
+      "fix": "Treat every dash-like code point, plus の and ・, as a block separator between digits.",
+      "id": "addresses.block-separators.0004",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "block-separators",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷2–21–1",
+      "expectedOutput": {
+        "chome": 2,
+        "ban": 21,
+        "go": 1
+      },
+      "severity": "high",
+      "reason": "Block numbers separated by U+2013.",
+      "fix": "Treat every dash-like code point, plus の and ・, as a block separator between digits.",
+      "id": "addresses.block-separators.0005",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "block-separators",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷2の21の1",
+      "expectedOutput": {
+        "chome": 2,
+        "ban": 21,
+        "go": 1
+      },
+      "severity": "high",
+      "reason": "Block numbers separated by U+306E.",
+      "fix": "Treat every dash-like code point, plus の and ・, as a block separator between digits.",
+      "id": "addresses.block-separators.0006",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "block-separators",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷2・21・1",
+      "expectedOutput": {
+        "chome": 2,
+        "ban": 21,
+        "go": 1
+      },
+      "severity": "high",
+      "reason": "Block numbers separated by U+30FB.",
+      "fix": "Treat every dash-like code point, plus の and ・, as a block separator between digits.",
+      "id": "addresses.block-separators.0007",
+      "tier": "free"
+    },
+    {
+      "category": "addresses",
+      "group": "block-unit-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷1丁目1番1号",
+      "expectedOutput": {
+        "chome": 1,
+        "ban": 1,
+        "go": 1
+      },
+      "severity": "medium",
+      "reason": "The unit form of a block number must parse to the same structure as the dash form.",
+      "fix": "Support 丁目/番/番地/号 as well as hyphens.",
+      "id": "addresses.block-unit-form.0001",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-dash-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷1-1-1",
+      "expectedOutput": {
+        "chome": 1,
+        "ban": 1,
+        "go": 1
+      },
+      "severity": "medium",
+      "reason": "The dash form of the same block number.",
+      "fix": "Both forms must produce the same structured result.",
+      "id": "addresses.block-dash-form.0001",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-unit-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷2丁目21番1号",
+      "expectedOutput": {
+        "chome": 2,
+        "ban": 21,
+        "go": 1
+      },
+      "severity": "medium",
+      "reason": "The unit form of a block number must parse to the same structure as the dash form.",
+      "fix": "Support 丁目/番/番地/号 as well as hyphens.",
+      "id": "addresses.block-unit-form.0002",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-dash-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷2-21-1",
+      "expectedOutput": {
+        "chome": 2,
+        "ban": 21,
+        "go": 1
+      },
+      "severity": "medium",
+      "reason": "The dash form of the same block number.",
+      "fix": "Both forms must produce the same structured result.",
+      "id": "addresses.block-dash-form.0002",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-unit-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷3丁目15番7号",
+      "expectedOutput": {
+        "chome": 3,
+        "ban": 15,
+        "go": 7
+      },
+      "severity": "medium",
+      "reason": "The unit form of a block number must parse to the same structure as the dash form.",
+      "fix": "Support 丁目/番/番地/号 as well as hyphens.",
+      "id": "addresses.block-unit-form.0003",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-dash-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷3-15-7",
+      "expectedOutput": {
+        "chome": 3,
+        "ban": 15,
+        "go": 7
+      },
+      "severity": "medium",
+      "reason": "The dash form of the same block number.",
+      "fix": "Both forms must produce the same structured result.",
+      "id": "addresses.block-dash-form.0003",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-unit-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷10丁目2番30号",
+      "expectedOutput": {
+        "chome": 10,
+        "ban": 2,
+        "go": 30
+      },
+      "severity": "medium",
+      "reason": "The unit form of a block number must parse to the same structure as the dash form.",
+      "fix": "Support 丁目/番/番地/号 as well as hyphens.",
+      "id": "addresses.block-unit-form.0004",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-dash-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷10-2-30",
+      "expectedOutput": {
+        "chome": 10,
+        "ban": 2,
+        "go": 30
+      },
+      "severity": "medium",
+      "reason": "The dash form of the same block number.",
+      "fix": "Both forms must produce the same structured result.",
+      "id": "addresses.block-dash-form.0004",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-unit-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷1丁目2番3号",
+      "expectedOutput": {
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "The unit form of a block number must parse to the same structure as the dash form.",
+      "fix": "Support 丁目/番/番地/号 as well as hyphens.",
+      "id": "addresses.block-unit-form.0005",
+      "tier": "pro"
+    },
+    {
+      "category": "addresses",
+      "group": "block-dash-form",
+      "op": "parseAddress",
+      "input": "東京都渋谷区渋谷1-2-3",
+      "expectedOutput": {
+        "chome": 1,
+        "ban": 2,
+        "go": 3
+      },
+      "severity": "medium",
+      "reason": "The dash form of the same block number.",
+      "fix": "Both forms must produce the same structured result.",
+      "id": "addresses.block-dash-form.0005",
+      "tier": "pro"
+    }
+  ]
+}

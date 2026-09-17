@@ -1,0 +1,38 @@
+{
+  "name": "@japanready/core",
+  "version": "0.1.0",
+  "description": "Japanese customer-data normalization and validation primitives: Unicode, kana, names, addresses, phone numbers, Corporate Number, Invoice Registration Number.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "README.md"],
+  "keywords": [
+    "japan",
+    "japanese",
+    "i18n",
+    "l10n",
+    "unicode",
+    "normalization",
+    "zenkaku",
+    "hankaku",
+    "kana",
+    "address",
+    "postal-code",
+    "corporate-number",
+    "invoice-number"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist"
+  }
+}

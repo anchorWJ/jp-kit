@@ -1,0 +1,41 @@
+{
+  "name": "@japanready/testkit",
+  "version": "0.1.0",
+  "description": "Japan compatibility test kit: an edge-case corpus and a runner that replays it through your product's own normalization and validation code.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "japanready": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./vitest": {
+      "types": "./dist/vitest.d.ts",
+      "import": "./dist/vitest.js",
+      "require": "./dist/vitest.cjs"
+    },
+    "./jest": {
+      "types": "./dist/jest.d.ts",
+      "import": "./dist/jest.js",
+      "require": "./dist/jest.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "corpus", "README.md"],
+  "keywords": ["japan", "testing", "compatibility", "i18n", "localization", "jest", "vitest"],
+  "scripts": {
+    "build": "tsup",
+    "corpus": "node --experimental-strip-types scripts/generate-corpus.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@japanready/core": "0.1.0"
+  }
+}

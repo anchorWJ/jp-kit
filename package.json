@@ -1,0 +1,30 @@
+{
+  "name": "japanready",
+  "version": "0.1.0",
+  "private": true,
+  "description": "JapanReady — Japan compatibility infrastructure for software teams",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @japanready/core && npm run build -w @japanready/testkit",
+    "build:core": "npm run build -w @japanready/core",
+    "corpus": "npm run build:core && npm run corpus -w @japanready/testkit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "npm run build:core && tsc --noEmit -p packages/core/tsconfig.json && tsc --noEmit -p packages/testkit/tsconfig.json",
+    "demo": "npm run build && node packages/testkit/dist/cli.js test --reference",
+    "demo:naive": "npm run build && node packages/testkit/dist/cli.js test --config examples/naive-app/japanready.config.ts --fail-on never"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}
